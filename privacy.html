@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy · Mum’s Grumble</title>
-<meta name="description" content="Mum’s Grumble keeps your plans and app choices on your phone. It sends only anonymous usage counts and crash reports.">
+<meta name="description" content="Mum’s Grumble keeps your app choices and what you type on your phone. It sends limited usage information and crash reports through Google Firebase.">
 <link rel="icon" href="icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -17,54 +17,56 @@
   </header>
 
   <h1>Privacy Policy</h1>
-  <p class="muted">Effective 23 November 2026</p>
+  <p class="muted">Effective 24 November 2026</p>
 
-  <p>Mum’s Grumble (“the app”) is made by Nguyen Ngan Hanh Tran (“we”, “us”). This policy explains what happens to your information when you use it.</p>
+  <p>Mum’s Grumble (“the app”), for iPhone and Android, is made by Nguyen Ngan Hanh Tran (“we”, “us”). This policy explains what happens to your information when you use it.</p>
 
   <div class="card">
     <strong>The short version</strong>
     <ul>
-      <li>Your plans, answers, dream and history stay on your phone. They are never sent to us.</li>
-      <li>No account, no email, no sign-in.</li>
-      <li>The apps you choose to pause stay private. Apple’s Screen Time gives the app sealed tokens, so even the app can’t see which apps you picked.</li>
-      <li>The app sends anonymous usage counts (for example “a Focus session started”) and crash reports, through Google Firebase, so we can see what works and fix what breaks.</li>
+      <li>The names of the apps you choose, who you say you are, your activities, your dream, your notes and your history stay on your phone. We never receive them.</li>
+      <li>The app sends limited usage information, such as the minutes of a Focus session or the number of Limit sessions a day, and crash reports, through Google Firebase.</li>
       <li>No advertising, no advertising ID, no tracking across other apps, and nothing is sold.</li>
-      <li>On a child’s phone in parent mode, nothing is sent at all.</li>
+      <li>Once parent mode is on, the app stops sending usage information and crash reports from that phone.</li>
+      <li>Version 1.0 for iPhone doesn’t include Firebase and sends none of this.</li>
     </ul>
   </div>
 
-  <h2>What stays on your iPhone</h2>
-  <p>To work, the app stores this information on your device only, inside the app and its Screen Time extensions:</p>
+  <h2>What stays on your phone</h2>
+  <p>To work, the app stores this on your device only. We have no way to see it:</p>
   <ul>
-    <li>Your answers during setup, such as who you are (student, parent or other), what you want more time for and any note you type for Mum.</li>
-    <li>Your Focus schedule, Right now sessions, Limit settings and breaks.</li>
-    <li>The apps you choose, held as Apple Screen Time tokens that we can’t read.</li>
-    <li>Your session counts and the history of time you protected.</li>
-    <li>Settings such as Quiet mode, Mum’s sounds and notification choices.</li>
-    <li>If you use parent mode, a scrambled (hashed) version of the 4-digit parent code, kept in the iPhone’s Keychain. The code itself is never stored.</li>
+    <li>Who you say you are (such as student or working), how long you say you scroll, the activities you pick, your dream and any note you type.</li>
+    <li>The days and times of your Focus schedule and the history of time you protected.</li>
+    <li>The apps you choose. On iPhone they are Apple Screen Time tokens that we can’t read. On Android the app keeps a list of their package names on your phone.</li>
+    <li>On iPhone, if you use parent mode, a scrambled (hashed) version of the 4-digit parent code, kept in the Keychain. The code itself is never stored.</li>
   </ul>
-  <p>We have no way to see any of this. To erase it, open <strong>Settings → Delete my data</strong> in the app, which also removes the app’s restrictions. Deleting the app removes it too. If you back up your iPhone, Apple may include the app’s data in that backup, under Apple’s own privacy terms.</p>
+  <p>To erase it, open <strong>Settings → Delete my data</strong> in the app. Deleting the app removes the app’s data too, although a hashed parent code can remain in the iPhone’s Keychain. If you back up your iPhone, Apple may include the app’s data in that backup, under Apple’s own privacy terms. The Android app turns Android backup off.</p>
 
-  <h2>Usage counts and crash reports</h2>
+  <h2>What the app sends</h2>
   <p>To learn which parts of the app help and to fix problems, the app uses Google Firebase Analytics and Firebase Crashlytics. They send:</p>
   <ul>
-    <li><strong>What you do in the app, as counts:</strong> setup steps reached, whether Screen Time was allowed, Focus and Limit started, saved or ended early, and whether you chose “Back to my day” or “Use a session” on Mum’s screen. Numbers such as minutes and sessions a day, and your choices from fixed lists such as role, language and activity type, may be included.</li>
+    <li><strong>What you do in the app:</strong> setup steps reached (not parent set-up), whether the permission Mum needs was allowed, whether you used Mum’s plan or your own, Focus and Limit started, saved or ended early, and whether you chose “Back to my day” or “Use a session” on Mum’s screen.</li>
+    <li><strong>Some of your settings, as numbers or choices:</strong> Focus minutes, how many days a schedule covers, Limit sessions a day, minutes per session and break length, the app’s language and whether Quiet mode is on.</li>
     <li><strong>Crash reports:</strong> what the app was doing when it crashed, the device model and system version.</li>
-    <li><strong>Standard technical details</strong> that Firebase adds: a random ID for this installation of the app, the device model, system version, app version and an approximate country from the network.</li>
+    <li><strong>Technical details that Firebase adds:</strong> a random ID for this installation of the app, the device model, system and app version, how the app was installed, times the app was opened, and an approximate location such as country or city, worked out from your network address.</li>
   </ul>
-  <p>They never include the names of the apps you choose, your dream, any note you type, your Screen Time data, your name or contact details, your precise location or an advertising ID. We don’t link this information to you, don’t use it for advertising and don’t share it with anyone else. Google processes it for us under its <a href="https://firebase.google.com/support/privacy">Firebase privacy terms</a>, and we keep it for 14 months.</p>
+  <p>We don’t send the names of the apps you choose, your role, your activities, your dream, any note you type, your Screen Time data, your name or contact details, your precise location or an advertising ID. We don’t use this information for advertising or to identify you.</p>
+  <p>Google processes it for us under its <a href="https://firebase.google.com/support/privacy">Firebase privacy terms</a>. Usage information tied to an installation is kept for up to 14 months, and crash reports for 90 days before Google starts deleting them. Totals that aren’t tied to an installation may be kept longer. Deleting the app ends that installation’s random ID; installing it again creates a new one.</p>
 
-  <h2>Screen Time</h2>
-  <p>The app uses Apple’s Screen Time frameworks (Family Controls, Managed Settings and Device Activity) to pause the apps you choose. Apple shows you the app names when you pick them, but the app only receives opaque tokens. Screen Time usage data never leaves your device and is never shared with us.</p>
+  <h2>Accessibility on Android</h2>
+  <p>On Android, the app asks you to turn on its Accessibility service. It uses the service only to notice which app comes to the front, so Mum can show her screen in front of the apps you chose. It doesn’t read what is on your screen, and it doesn’t tap or type anything. Which app you open is checked on your phone and isn’t sent to us. Your choice on Mum’s screen is sent without the app’s name, as described above. You can turn the service off at any time in Android’s Accessibility settings.</p>
+
+  <h2>Screen Time on iPhone</h2>
+  <p>The iPhone app uses Apple’s Screen Time frameworks (Family Controls, Managed Settings and Device Activity) to pause the apps you choose. Apple shows you the app names when you pick them, but the app only receives opaque tokens. Screen Time usage data never leaves your device and is never shared with us.</p>
 
   <h2>Notifications and widgets</h2>
-  <p>Reminders are scheduled on your iPhone. They aren’t sent from a server, and the app has no push service. The Home Screen widget and Live Activity read the same on-device information.</p>
+  <p>Reminders are scheduled on your phone. They aren’t sent from a server. On iPhone, the Home Screen widget and Live Activity read the same on-device information.</p>
 
   <h2>Purchases</h2>
-  <p>The app is free and has no in-app purchases. If paid features are added later, Apple will process payments and we will never see your payment details. This policy will be updated first.</p>
+  <p>The app is free and has no in-app purchases. If paid features are added later, Apple or Google will process payments and we will never see your payment details. This policy will be updated first.</p>
 
   <h2>Children</h2>
-  <p>A parent can set Mum’s Grumble up on their child’s iPhone with parent mode. In parent mode the app sends no usage counts and no crash reports: nothing leaves that phone.</p>
+  <p>On iPhone, a parent can set the app up on their child’s phone with parent mode. Once parent mode is on, the app sends no usage information and no crash reports from that phone. The Android app has no parent mode.</p>
 
   <h2>Sharing</h2>
   <p>We don’t sell, rent or share your information. The only service that receives anything is Google Firebase, as described above.</p>
